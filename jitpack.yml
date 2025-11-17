@@ -3,5 +3,4 @@ jdk:
 before_install:
   - ./gradlew --version
 install:
-  - ./gradlew clean -Pgroup=com.github.wubuku -Pversion=$VERSION -xtest assemble
-  - ./gradlew -b jitpack.gradle publishToMavenLocal
+  - ./gradlew clean -Pgroup=com.github.wubuku -Pversion=$VERSION -Pjitpack -xtest assemble publishToMavenLocal

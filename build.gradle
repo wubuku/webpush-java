@@ -105,4 +105,6 @@ artifacts {
 
 if (hasProperty('release')) {
     apply from: 'release.gradle'
+} else if (hasProperty('jitpack')) {
+    apply from: 'jitpack.gradle'
 }
